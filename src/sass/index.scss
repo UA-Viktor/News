@@ -1,2 +1,19 @@
-@import './common';
-@import './example';
+@import './utils/variables';
+@import './utils/breakpoints';
+@import './components/body';
+@import './components/header';
+@import './components/logo';
+
+// @media (min-width: $mobile) {
+// }
+
+// @media screen and (min-width: $tablet) {
+// }
+
+// @media screen and (min-width: $desktop) {
+// }
+
+
+
+
+
