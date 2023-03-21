@@ -1,10 +1,11 @@
 body {
     margin: 0;
+    background-color: green;
 
-    @media (min-width: $mobile) {
-    // background-color: $bg-color-primary; 
-    background-color: green; 
-    }
+    // @media (min-width: $mobile) {
+    // // background-color: $bg-color-primary; 
+    // background-color: green; 
+    // }
 
     @media screen and (min-width: $tablet) {
     background-color: yellow;
@@ -62,4 +63,8 @@ img {
     width: 1248px;
     padding: 28px 16px;
     }
+}
+
+.responsive {
+    max-width: 1140px;
 }
