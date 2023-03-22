@@ -17,27 +17,217 @@
 <body>
 
   <header>
-    <div class="container responsive">
+    <div class="container resposive">
+
       <div class="header">
         <a href="index.html" class="logo">
           News
         </a>
+
+        <ul class="header-nav">
+          <li class="header-item">
+            <a class="header-text" href="index.html" class="link current">Home</a>
+          </li>
+          <li class="header-item">
+            <a class="header-text" href="index.html" class="link">Favorite</a>
+          </li>
+          <li class="header-item">
+            <a class="header-text" href="index.html" class="link">Read</a>
+          </li>
+        </ul>
+
+        <!-- hidden -->
+
+        <form class="form-search" role="search" id="form-search">
+          <input class="form-input" type="" placeholder="Search |" aria-label="Search" name="searchQuery"
+            autocomplete="off">
+
+          <button class="form-button">
+            <svg class="form-button-svg" width="20" height="20">
+              <use href="./images/symbol-defs.svg#icon-search">
+              </use>
+            </svg>
+          </button>
+
+        </form>
+
+        <div class="theme-switcher">
+          theme
+        </div>
+
+        <button class="button-menu" aria-expanded="false">
+          <svg class="button-menu-svg" width="24" height="24" aria-label="Перемикач мобільного меню">
+            <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
+            <use class="icon-close" href="./images/symbol-defs.svg#icon-menu_close"></use>
+          </svg>
+        </button>
+
       </div>
     </div>
   </header>
 
 
   <main>
+
     <section>
-      <div class="container">
-        <div>Hello</div>
+      <div class="container resposive">
+
+        <div class="search-by-value">
+          <div class="categories" id="myDiv">
+            <ul class="categories-list">
+              <!-- <li>
+                <button class="categories-button">
+                  Кнопка 1
+                </button>
+              </li>
+              <li>
+                <button class="categories-button">
+                  Кнопка 2
+                </button>
+              </li>
+              <li>
+                <button class="categories-button">
+                  Кнопка 3
+                </button>
+              </li> -->
+            </ul>
+
+          </div>
+
+          <div class="calendar">
+
+          </div>
+
+        </div>
+
       </div>
     </section>
+
+
+
+    <!-- <section class="hero">
+      <div class="container">
+        <h1 class="hero-title">We haven’t found news from this category</h1>
+        <img src="./images/main_image_3.png"></img>
+      </div>
+    </section> -->
+
+    <section>
+      <div class="container">
+        <div class="news">
+
+          <ul class="news-set">
+            <li class="news-item">
+              <a href="" class="news-item__link">
+                <article class="news-item__product">
+
+                  <div class="news-item__thumb">
+
+                    <img
+                      src="https://static01.nyt.com/images/2023/03/19/multimedia/17americansineurope-bzjq/17americansineurope-bzjq-mediumThreeByTwo440.jpg"
+                      alt="foto">
+
+                    <button class="button">
+                      Add to favotite
+                      <svg class="form-button-svg" width="20" height="20">
+                        <use class="icon-menu" href="./images/symbol-defs.svg#icon-heart_empty"></use>
+                        <!-- <use class="icon-close" href="./images/symbol-defs.svg#icon-menu_close"></use> -->
+                      </svg>
+                    </button>
+
+                  </div>
+
+                  <div class="news-item__content">
+                    <h2 class="news-item__heading">
+                      8 tips for passing an online interview that will help you get a job
+                    </h2>
+                    <p class="news-item__text">
+                      Before you start looking for a job, it is useful to familiarize yourself
+                      with the job prospects offered by these...</p>
+                    <div>
+                      <span>Data</span>
+                      <button>Read more</button>
+                    </div>
+                  </div>
+                </article>
+              </a>
+            </li>
+
+
+            <li class="news-item">
+              <a href="" class="news-item__link">
+                <article class="news-item__product">
+
+                  <div class="news-item__thumb">
+
+                    <img
+                      src="https://static01.nyt.com/images/2023/03/19/multimedia/17americansineurope-bzjq/17americansineurope-bzjq-mediumThreeByTwo440.jpg"
+                      alt="foto">
+
+                    <button class="news-item__thumb-button">
+                      Add to favotite
+                      <svg class="form-button-svg" width="20" height="20">
+                        <use class="icon-menu" href="./images/symbol-defs.svg#icon-heart_empty"></use>
+                        <!-- <use class="icon-close" href="./images/symbol-defs.svg#icon-menu_close"></use> -->
+                      </svg>
+                    </button>
+
+                  </div>
+
+                  <div class="news-item__content">
+                    <h2 class="news-item__heading">
+                      8 tips for passing an online interview that will help you get a job
+                    </h2>
+                    <p class="news-item__text">
+                      Before you start looking for a job, it is useful to familiarize yourself
+                      with the job prospects offered by these...</p>
+                    <div>
+                      <span>Data</span>
+                      <button>Read more</button>
+                    </div>
+                  </div>
+                </article>
+              </a>
+            </li>
+
+
+
+
+
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+
   </main>
 
   <footer>
 
   </footer>
+
+
+  <!-- <script>
+    (() => {
+
+      const menuBtnRef = document.querySelector("[button-menu]");
+
+      menuBtnRef.addEventListener("click", () => {
+        const expanded =
+          menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+
+        menuBtnRef.classList.toggle("is-open");
+        menuBtnRef.setAttribute("aria-expanded", !expanded);
+
+        menuBtnRef2.classList.toggle("is-open");
+        menuBtnRef2.setAttribute("aria-expanded", !expanded);
+
+        mobileMenuRef.classList.toggle("is-open");
+
+      });
+    })();
+  </script> -->
 
 </body>
 

@@ -7,11 +7,14 @@ $text-color-secondary: #4440F6;   // - синий
 $text-color-disabled: #A8A8A8; // - серый
 $text-color-accent: #FFFFFF;    // - белый
 
-// @media screen and (max-width: 767px) {
+// @media (min-width: $mobile) {
+//     background-color: $bg-color-primary;
 // }
 
-// @media screen and (min-width: 768px) {
+// @media screen and (min-width: $tablet) {
+//     // background-color: yellow;
 // }
 
-// @media screen and (min-width: 1200px) {
+// @media screen and (min-width: $desktop) {
+//     // background-color: tomato;
 // }

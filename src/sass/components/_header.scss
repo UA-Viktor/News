@@ -1,15 +1,162 @@
 .header {
-    display: flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-        // @media (min-width: $mobile) {
-        //     background-color: $bg-color-primary;
-        // }
-    
-        // @media screen and (min-width: $tablet) {
-        //     // background-color: yellow;
-        // }
-    
-        // @media screen and (min-width: $desktop) {
-        //     // background-color: tomato;
-        // }
+.header-nav {
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    gap: 69px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    gap: 69px;
+  }
+}
+
+.header-item {
+  padding-top: 10px;
+  padding-bottom: 6px;
+
+  border-bottom: 1px solid $bg-color-primary;
+  &:hover {
+    border-bottom: 1px solid $text-color-secondary;
+  }
+}
+
+.header-text {
+  text-decoration: none;
+  color: $text-color-primary;
+
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+
+  @media screen and (min-width: $tablet) {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+//
+
+// Форма поиска
+
+//
+
+.form-search {
+  position: relative;
+}
+
+.form-input {
+  display: block;
+  width: 121px;
+  height: 19px;
+  padding: 5px 10px 5px 40px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+
+  background-color: $text-color-accent;
+  color: $text-color-primary;
+  border: 1px solid $text-color-disabled;
+  border-radius: 25px;
+
+  @media screen and (min-width: $tablet) {
+    width: 191px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 266px;
+  }
+}
+
+.form-button {
+  position: absolute;
+
+  top: 50%;
+  left: 20px;
+  //   right: 0px;
+
+  transform: translate(-50%, -50%) scale(1);
+  display: flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: $text-color-accent;
+}
+
+//
+
+// Кнопка переключатель темы
+
+//
+
+.theme-switcher {
+  display: none;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 98px;
+    height: 21px;
+    background: rgb(54, 148, 104);
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 148px;
+    height: 24px;
+    background: rgb(52, 64, 176);
+  }
+}
+
+//
+
+// Кнопка бургер меню
+
+//
+.button-menu {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  background-color: $bg-color-primary;
+
+  & .icon-close {
+    display: none;
+  }
+
+  &.is-open .icon-menu {
+    display: none;
+  }
+
+  &.is-open .icon-close {
+    display: block;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
 }

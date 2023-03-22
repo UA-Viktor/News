@@ -1,0 +1,39 @@
+.search-by-value {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.categories {
+    // background-color: yellow;
+}
+
+.categories-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.categories-button {
+  padding: 7px 24px;
+
+  border: 1px solid $text-color-secondary;
+  border-radius: 25px;
+
+  color: $text-color-secondary;
+  background-color: $bg-color-primary;
+
+  &:hover {
+    color: $bg-color-primary;
+    background-color: $text-color-secondary;
+  }
+}
+
+
+
+.calendar {
+    width: 50px;
+    height: 25px;
+    background-color: mediumorchid;
+}
